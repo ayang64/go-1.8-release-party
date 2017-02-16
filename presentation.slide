@@ -51,6 +51,7 @@ The new back end, based on static single assignment form (SSA), generates more c
 - The new back end reduces the CPU time required by our benchmark programs by 20-30% on 32-bit ARM systems.
 - For 64-bit x86 systems, which already used the SSA back end in Go 1.7, the gains are a more modest 0-10%.
 - Other architectures will likely see improvements closer to the 32-bit ARM numbers.
+- *SSA allows makes optimizations like common subexpression elimination, dead code elimination, register allocation, and stack frame allocation.*
 
 .link https://dave.cheney.net/2016/11/19/go-1-8-toolchain-improvements Go 1.8 Toolchain Improvements
 
